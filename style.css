@@ -1,0 +1,35 @@
+﻿body {
+  background-color: lightgreen;
+}
+
+h1 {
+  color: black;
+  font-family: arial;
+  text-align: center;
+}
+
+p {
+  font-family: arial;
+  font-size: 20px;
+  text-align: left;
+}
+table {
+  font-family: arial;
+  font-size: 18px;
+}
+
+a {
+  font-family: arial;
+  font-size: 16px;
+}
+
+li {
+  color: black;
+  font-family: arial;
+  text-align: left;
+}
+
+hidden {
+	color: lightgreen;
+	text-align: right;
+}

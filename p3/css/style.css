@@ -1,0 +1,27 @@
+﻿.img {
+  height: 900px;
+  width: auto;
+}
+.img-responsive {
+    width: auto;
+    height: 900px;
+}
+a {
+	color: white;
+}
+hidden {
+
+	color: lightgreen;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif
+}
+large {
+  width: auto;
+  text-align: center;
+}
+header{
+line-height: 60px;
+margin: 0 auto;
+display: block;
+width: 940px;
+text-align:center;
+}
