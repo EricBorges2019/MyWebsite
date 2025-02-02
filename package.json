@@ -1,0 +1,22 @@
+{
+  "name": "eric_borges_website",
+  "version": "1.0.0",
+  "description": "MyWebsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricBorges2019/MyWebsite.git"
+  },
+  "author": "Eric Farias Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricBorges2019/MyWebsite/issues"
+  },
+  "homepage": "https://github.com/EricBorges2019/MyWebsite#readme",
+  "dependencies": {
+    "webtorrent": "^2.5.5"
+  }
+}
