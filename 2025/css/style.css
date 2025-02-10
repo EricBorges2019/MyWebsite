@@ -1,0 +1,16 @@
+﻿.img {
+  height: 900px;
+  width: auto;
+}
+.img-responsive {
+    width: auto;
+    height: 900px;
+}
+a {
+	color: Black;
+}
+hidden {
+
+	color: lightgreen;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif
+}
