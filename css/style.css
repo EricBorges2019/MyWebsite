@@ -10,6 +10,7 @@
 a {
 	color: Black;
 	text-align:center
+}
 body {
     animation: fadeInAnimation ease 3s
     animation-iteration-count: 1;
