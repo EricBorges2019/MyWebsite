@@ -1,6 +1,6 @@
 {
   "name": "eric_borges_website",
-  "version": "1.0.0",
+  "version": "4",
   "description": "MyWebsite",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/EricBorges2019/MyWebsite#readme",
   "dependencies": {
-    "webtorrent": "^2.5.5"
+    "webtorrent": "^2.5.19"
   }
 }
