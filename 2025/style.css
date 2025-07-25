@@ -1,50 +1,308 @@
-﻿.img {
-  height: 900px;
-  width: auto;
-}
-.img-responsive {
-    width: auto;
+/*!
+ * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
+ * Copyright 2013-2023 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ */
+
+ .img {
     height: 900px;
-    
-}
-a {
-	color: Black;
-	text-align:center
-body {
-    animation: fadeInAnimation ease 3s
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
+    width: auto;
+  }
+  .img-responsive {
+      width: auto;
+      height: 900px;
+
+  }
+  a {
+      color: Black;
+      text-align:center;
+  }
+  body {
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+  }
+  .hidden {
+
+      color: white;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
   
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
+  h2 {
+      margin: auto;
+      text-align:center;
+      margin-left: auto;
+      color: black;
+      margin-right: auto;
+  }
+  p {
+      margin: auto;
+      text-align:center;
+      display: flex;
+      justify-content: center;
+  }
+  .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+#sidebar-wrapper {
+    z-index: 1050;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    background: #1d809f;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper.active {
+    margin-left: 0;
+}
+
+.sidebar-nav {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav-item {
+    padding: 1.25rem 1.5rem;
+}
+
+.sidebar-nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-nav-item a:hover,
+.sidebar-nav-item a:active,
+.sidebar-nav-item a:focus {
+    text-decoration: underline;
+}
+
+.sidebar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.5rem;
+    color: white;
+}
+
+.menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    transition: background 0.5s ease;
+}
+
+.menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.masthead {
+    position: relative;
+    min-height: 30rem;
+    padding: 15rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masthead h1,
+.masthead .h1 {
+    font-size: 4rem;
+}
+
+@media (min-width: 992px) {
+
+    .masthead {
+        height: 100vh;
     }
-    100% {
+
+    .masthead h1,
+    .masthead .h1 {
+        font-size: 5.5rem;
+    }
+}
+
+.content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2 {
+    font-size: 3rem;
+}
+
+.content-section-heading h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.service-icon {
+    font-size: 2.25rem;
+}
+
+.callout {
+    padding: 15rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.callout h2,
+.callout .h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 37, 41, 0.2);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item .caption .caption-content {
+    color: white;
+}
+
+.portfolio-item .caption .caption-content h2,
+.portfolio-item .caption .caption-content .h2 {
+    font-size: 2rem;
+}
+
+.portfolio-item .caption .caption-content p {
+    font-weight: 300;
+}
+
+@media (min-width: 992px) {
+    .portfolio-item {
+        max-width: none;
+        margin: 0;
+    }
+
+    .portfolio-item .caption {
+        opacity: 0;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+
+    .portfolio-item:hover .caption {
         opacity: 1;
-     }
-}
-hidden {
-
-	color: white;
-	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif
+    }
 }
 
-h2 {
-	margin: auto  auto;
-	text-align:center;
-	margin-left: auto;
-	color: 
-    margin-right: auto;
+.map iframe {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-p {
-	margin: auto auto;
-	text-align:center;
-	display: flex;
-justify-content: center;
+
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
-.center {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+
+.social-link {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.social-link:hover {
+    background-color: #1d809f;
+    text-decoration: none;
+}
+
+.scroll-to-top {
+    z-index: 1049;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    display: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #1d809f;
+    color: white;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: white;
+}
+
+.scroll-to-top:hover {
+    background-color: #196f8a;
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}
+
+.btn-xl {
+    padding: 1.25rem 2.5rem;
+}
+
+.bg-primary {
+    background-color: #1d809f !important;
+}
+
+.text-primary {
+    color: #1d809f !important;
+}
+
+.text-secondary {
+    color: #ecb807 !important;
 }
