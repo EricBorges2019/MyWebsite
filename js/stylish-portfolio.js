@@ -31,12 +31,13 @@
   });
 
   // Scroll to top button appear
+  var $scrollToTop = $('.scroll-to-top');
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
-      $('.scroll-to-top').fadeIn();
+      $scrollToTop.fadeIn();
     } else {
-      $('.scroll-to-top').fadeOut();
+      $scrollToTop.fadeOut();
     }
   });
 
