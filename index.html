@@ -48,7 +48,7 @@
 <body onload="document.body.style.opacity='1'">
 
 
-    <a class="menu-toggle rounded" href="#">
+    <a class="menu-toggle rounded" href="#" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
     </a> 
     <div data-cdc-widget="COVIDCountyCheck" data-horizontal="true" ></div> 
@@ -95,75 +95,66 @@
 
         </div>
         <section class="content-section bg-primary text-white text-center" id="Portfolio">
-<div class="row">
-    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-        <a></a>
-        <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-                <a href="./2025/index.html">
-                    <img class="img-thumbnail" src="" height="918" width="1042"></img>
-            </span>
-            <h4>
-                <strong>2025</strong>
-            </h4>
-            </a>
-            <h6 class="text-faded mb-0">Under Construction.</p> <!-- I fixed some stuff up with this one. -->
-        </div>
-    </div>
-</div>
-</section>
-
-        <section class="content-section bg-primary text-white text-center" id="Portfolio">
             <div class="container">
                 <div class="content-section-heading">
                     <h2 class="mb-5">My projects</h2>
                 </div>
                 
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <a href="./p1/index.html">
-                                <img class="img-thumbnail" src="img/Project1.png" height="680" width="997"></img>
-
-                        </span>
-                        <h4>
-                            <strong>Project 1</strong>
-                        </h4>
+                        <a href="./2025/index.html" class="text-white text-decoration-none">
+                            <span class="service-icon rounded-circle mx-auto mb-3">
+                                <img class="img-thumbnail" src="img/Project1.png" style="opacity: 0.2; filter: grayscale(100%);" alt="Project 2025 - Under Construction">
+                            </span>
+                            <h4>
+                                <strong>2025</strong>
+                            </h4>
+                        </a>
+                        <h6 class="text-faded mb-0">Under Construction.</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <a href="./p1/index.html" class="text-white text-decoration-none">
+                            <span class="service-icon rounded-circle mx-auto mb-3">
+                                <img class="img-thumbnail" src="img/Project1.png" height="680" width="997" alt="Preview of Project 1">
+                            </span>
+                            <h4>
+                                <strong>Project 1</strong>
+                            </h4>
                         </a>
                         <h6 class="text-faded mb-0">My first page!</h6>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <a href="./p2/index.html">
-                                <img class="img-thumbnail" src="img/Project2.png" height="1120" width="972"></img>
-                        </span>
-                        <h4>
-                            <strong>Project 2</strong>
-                        </h4>
+                        <a href="./p2/index.html" class="text-white text-decoration-none">
+                            <span class="service-icon rounded-circle mx-auto mb-3">
+                                <img class="img-thumbnail" src="img/Project2.png" height="1120" width="972" alt="Preview of Project 2">
+                            </span>
+                            <h4>
+                                <strong>Project 2</strong>
+                            </h4>
                         </a>
-                        <h6 class="text-faded mb-0">My first Bootstrap page!</p>
+                        <h6 class="text-faded mb-0">My first Bootstrap page!</h6>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <a href="./p3/index.html">
-                                <img class="img-thumbnail" src="img/Project3.png" height="680" width="997"></img>
-                        </span>
-                        <h4>
-                            <strong>Project 3</strong>
-                        </h4>
+                        <a href="./p3/index.html" class="text-white text-decoration-none">
+                            <span class="service-icon rounded-circle mx-auto mb-3">
+                                <img class="img-thumbnail" src="img/Project3.png" height="680" width="997" alt="Preview of Project 3">
+                            </span>
+                            <h4>
+                                <strong>Project 3</strong>
+                            </h4>
                         </a>
-                        <h6 class="text-faded mb-0">Implementing Javascript!</p>
+                        <h6 class="text-faded mb-0">Implementing Javascript!</h6>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3">
-                            <a href="./p4/index.html">
-                                <img class="img-thumbnail" src="img/Project4.png" height="918" width="1042"></img>
-                        </span>
-                        <h4>
-                            <strong>Project 4</strong>
-                        </h4>
+                        <a href="./p4/index.html" class="text-white text-decoration-none">
+                            <span class="service-icon rounded-circle mx-auto mb-3">
+                                <img class="img-thumbnail" src="img/Project4.png" height="918" width="1042" alt="Preview of Project 4">
+                            </span>
+                            <h4>
+                                <strong>Project 4</strong>
+                            </h4>
                         </a>
-                        <h6 class="text-faded mb-0">JQuery Tic-Tac-Toe!</p> <!-- I fixed some stuff up with this one. -->
+                        <h6 class="text-faded mb-0">JQuery Tic-Tac-Toe!</h6>
                     </div>
                     
                 </div>
@@ -194,12 +185,12 @@
                     <ul class="list-inline mb-5">
                         
                         <li class="list-inline-item">
-                            <a class="social-link rounded-circle text-white" href="https://github.com/EricBorges2019">
+                            <a class="social-link rounded-circle text-white" href="https://github.com/EricBorges2019" aria-label="GitHub profile">
                                 <i class="icon-social-github"></i>
                             </a>
                         </li>
                     </ul>
-                    <h6 class="text-muted small mb-0">Eric Borges 2025.02.02</p>
+                    <h6 class="text-muted small mb-0">Eric Borges 2025.02.02</h6>
                 </div>
                 <div style="text-align:center"><script type="text/javascript" src="https://counter.websiteout.com/js/22/0/6/0"></script></div>
             </footer>
