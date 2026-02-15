@@ -1,0 +1,3 @@
+## 2025-05-15 - [Portfolio Link Accessibility & Structural Repair]
+**Learning:** Portfolio projects often suffer from fragmented click targets where the image and title are separate or improperly nested links. Wrapping both in a single, well-structured anchor tag significantly improves mobile usability and accessibility. Additionally, static portfolio templates can accumulate duplicate IDs and malformed head/script tags over time.
+**Action:** Always wrap project visual assets and titles in a single `<a>` tag with `d-block` and `text-decoration-none`. Ensure all icon-only links have `aria-label`.
