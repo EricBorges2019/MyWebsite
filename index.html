@@ -35,15 +35,14 @@
 
     <meta name="robots" content="index, follow" />
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="fau.edu/images/homepage/favicon.ico">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V77Y5PFVZN"></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V77Y5PFVZN"></script>
 
 <body onload="document.body.style.opacity='1'">
+    <a class="skip-to-content-link" href="#main-content">Skip to Content</a>
 
-
-    <a class="menu-toggle rounded" href="#" aria-label="Toggle navigation menu">
+    <a class="menu-toggle rounded" href="#" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar-wrapper">
         <i class="fas fa-bars"></i>
     </a> 
     <div data-cdc-widget="COVIDCountyCheck" data-horizontal="true" ></div> 
@@ -70,7 +69,7 @@
       </li>
     </ul>
   </nav> 
-    <h1>Welcome to my website!</h1>
+    <h1 id="main-content">Welcome to my website!</h1>
     <div style="text-align: center;">
     <h4>
         Here's some projects I' made over the course of my Spring 2021 semester:
@@ -89,8 +88,8 @@
             <h4>
                 <strong>2025</strong>
             </h4>
+            <h6 class="text-faded mb-0">Under Construction.</h6> <!-- I fixed some stuff up with this one. -->
         </a>
-        <h6 class="text-faded mb-0">Under Construction.</h6> <!-- I fixed some stuff up with this one. -->
     </div>
 </div>
 </section>
@@ -110,8 +109,8 @@
                             <h4>
                                 <strong>Project 1</strong>
                             </h4>
+                            <h6 class="text-faded mb-0">My first page!</h6>
                         </a>
-                        <h6 class="text-faded mb-0">My first page!</h6>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <a href="./p2/index.html" class="d-block text-decoration-none">
@@ -121,8 +120,8 @@
                             <h4>
                                 <strong>Project 2</strong>
                             </h4>
+                            <h6 class="text-faded mb-0">My first Bootstrap page!</h6>
                         </a>
-                        <h6 class="text-faded mb-0">My first Bootstrap page!</h6>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <a href="./p3/index.html" class="d-block text-decoration-none">
@@ -132,8 +131,8 @@
                             <h4>
                                 <strong>Project 3</strong>
                             </h4>
+                            <h6 class="text-faded mb-0">Implementing Javascript!</h6>
                         </a>
-                        <h6 class="text-faded mb-0">Implementing Javascript!</h6>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a href="./p4/index.html" class="d-block text-decoration-none">
@@ -143,8 +142,8 @@
                             <h4>
                                 <strong>Project 4</strong>
                             </h4>
+                            <h6 class="text-faded mb-0">JQuery Tic-Tac-Toe!</h6> <!-- I fixed some stuff up with this one. -->
                         </a>
-                        <h6 class="text-faded mb-0">JQuery Tic-Tac-Toe!</h6> <!-- I fixed some stuff up with this one. -->
                     </div>
                     
                 </div>
@@ -185,6 +184,12 @@
                 <div style="text-align:center"><script type="text/javascript" src="https://counter.websiteout.com/js/22/0/6/0"></script></div>
             </footer>
         </section>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
 </body>
 
 </html>
