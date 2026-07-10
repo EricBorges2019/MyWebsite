@@ -1,6 +1,6 @@
 {
     "title": "Stylish Portfolio",
-    "name": "startbootstrap-stylish-portfolio",
+    "name": "p4-portfolio",
     "version": "5.0.9",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
