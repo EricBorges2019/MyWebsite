@@ -2,16 +2,24 @@
 <rss version="2.0">
   <channel>
     <title>Feed — Eric Borges</title>
-    <link>https://ericborges2019.github.io/MyWebsite/feed/</link>
+    <link>https://ericborges.click/feed/</link>
     <description>Short posts, notes, and updates from Eric Borges.</description>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Aug 2026 09:00:00 -0400</lastBuildDate>
     <item>
+    <title>Plan 9 From Outer Space</title>
+    <link>https://archive.org/download/plan-9-from-outer-space_202009/plan-9-from-outer-space_202009_archive.torrent</link>
+    <pubDate>Fri, 07 Aug 2026 09:18:00 -0400</pubDate>
+    <description> test of torrent RSS. </description>
+    </item>
+
+    <item>
       <title>Hello, world</title>
-      <link>https://ericborges2019.github.io/MyWebsite/feed/hello-world.html</link>
-      <guid isPermaLink="true">https://ericborges2019.github.io/MyWebsite/feed/hello-world.html</guid>
+      <link>https://ericborges.click/feed/hello-world.html</link>
+      <guid isPermaLink="true">https://ericborges.click/feed/hello-world.html</guid>
       <pubDate>Fri, 07 Aug 2026 09:00:00 -0400</pubDate>
       <description>This is the first post on the feed. I'll use this space for short updates, notes, and links as I add them.</description>
     </item>
+
   </channel>
 </rss>
