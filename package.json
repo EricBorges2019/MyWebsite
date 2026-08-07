@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/EricBorges2019/MyWebsite#readme",
   "dependencies": {
+    "feed": "^6.0.0",
     "webtorrent": "^2.6.10"
   }
 }
