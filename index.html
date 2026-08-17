@@ -30,6 +30,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/hover.js"></script>
+    <script src="js/stylish-portfolio.min.js"></script>
     <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5631991540379140"
          crossorigin="anonymous"></script>-->
 
@@ -55,6 +56,9 @@
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#accounts">Accounts</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#btc">Send me BTC</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="./p1/index.html">Project 1</a>
@@ -167,8 +171,70 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>-->
 
+        <!-- Bitcoin tip jar -->
+        <section class="content-section text-center" id="btc" style="padding: 4rem 1rem;">
+            <div class="container">
+                <div class="content-section-heading">
+                    <h2 class="mb-3">Send me some BTC</h2>
+                </div>
+                <h6 class="mb-4" style="font-weight: 400;">
+                    If you wanna send me some bitcoin for whatever reason
+                </h6>
+
+                <a href="bitcoin:bc1qk7323d3s398hp05m9vret29g2e8zhaav6yn8wc"
+                   aria-label="Open this Bitcoin address in a wallet app"
+                   style="display: inline-block; background: #fff; padding: 1rem; border-radius: .5rem; box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);">
+                    <img src="img/btc-qr.svg" width="220" height="220"
+                         style="display: block; width: 220px; height: 220px;"
+                         alt="QR code for Bitcoin address bc1qk7323d3s398hp05m9vret29g2e8zhaav6yn8wc">
+                </a>
+
+                <div class="mx-auto mt-4" style="max-width: 30rem;">
+                    <code id="btc-address"
+                          style="display: block; background: #f8f9fa; border: 1px solid #dee2e6; color: #212529; padding: .75rem; border-radius: .375rem; font-size: 1rem; overflow-wrap: anywhere;">bc1qk7323d3s398hp05m9vret29g2e8zhaav6yn8wc</code>
+                    <button type="button" id="btc-copy" class="btn btn-primary mt-3">
+                        Copy address
+                    </button>
+                </div>
+
+                <h6 class="mt-4 mb-0 text-muted small" style="font-weight: 400;">
+                    BTC only, don't try to send anything else or that money will be lost.
+                </h6>
+            </div>
+        </section>
+
+        <script>
+        (function () {
+            var btn = document.getElementById('btc-copy');
+            var addr = document.getElementById('btc-address').textContent.trim();
+            if (!btn) return;
+            btn.addEventListener('click', function () {
+                var done = function () {
+                    btn.textContent = 'Copied!';
+                    setTimeout(function () { btn.textContent = 'Copy address'; }, 2000);
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(addr).then(done, fallback);
+                } else {
+                    fallback();
+                }
+                function fallback() {
+                    var t = document.createElement('textarea');
+                    t.value = addr;
+                    t.setAttribute('readonly', '');
+                    t.style.position = 'absolute';
+                    t.style.left = '-9999px';
+                    document.body.appendChild(t);
+                    t.select();
+                    try { document.execCommand('copy'); done(); }
+                    catch (e) { btn.textContent = 'Press Ctrl+C to copy'; }
+                    document.body.removeChild(t);
+                }
+            });
+        })();
+        </script>
+
         <section id="aboutme">
-<!-- PLACE NEURALNETWORK HERE -->
         
         </section>
 
@@ -191,3 +257,4 @@
 </body>
 
 </html>
+
